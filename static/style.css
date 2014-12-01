@@ -1,0 +1,352 @@
+.d3-vec { position:absolute; }
+path {
+  fill: #000;
+  fill-opacity: .05;
+  stroke: red;
+  stroke-opacity: 0.50;
+  stroke-width: 15.0px;
+  }
+body {
+  margin:0px;
+  padding:0px;
+  font:normal 15px/20px Arial,sans-serif;
+  background:#fff;
+  }
+
+article {
+  width:33.3333%;
+  min-width:320px;
+  position:relative;
+  padding-top:40px;
+  padding-bottom:33.3333%;
+  }
+section {
+  padding:40px;
+  margin-left:40px;
+  position:relative;
+  transition:background 500ms, color 500ms;
+  -moz-transition:background 500ms, color 500ms;
+  -webkit-transition:background 500ms, color 500ms;
+  }
+section,
+section a {
+  color:#888;
+  color:rgba(128,128,128,0);
+  text-decoration:none;
+  text-shadow:rgba(64,64,64,1) 0px 0px 4px;
+  }
+section.active {
+  background:maroon;
+  color:#eee;
+  }
+section.active a { color:#eee; }
+section.active small { color:#aaa; }
+h1 { font-size:2em; line-height:1em; }
+h2 { font-size:1.3333em; }
+h1,h2 { margin:0px 0px 10px; }
+p { margin:0px; }
+
+.scroll {
+  position:absolute;
+  right:0px; bottom:0px;
+  font-size:10px;
+  text-transform:uppercase;
+  padding:5px 10px;
+  }
+.colophon {
+  display:block;
+  margin-top:10px;
+  }
+
+.cover:before {
+  content:'';
+  display:block;
+  width:120px; height:120px;
+  margin:0px auto 20px;
+  }
+.cover.active:before { background:url(./7292013.png) 0px -120px no-repeat; }
+
+#pane {
+  position:fixed;
+  top:0px;
+  bottom:0px;
+  right:0px;
+  width:66.6666%;
+  }
+#map  {
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  width:200%;
+  left:-50%;
+  transition:opacity 250ms;
+  -moz-transition:opacity 250ms;
+  -webkit-transition:opacity 250ms;
+  }
+
+.spot {
+  width:120px;
+  height:120px;
+  margin:-60px 0px 0px -60px;
+  background:url(./7292013.png) 120px 120px no-repeat;
+  position:absolute;
+  }
+
+/*Main stops*/
+.spot-cover { display:none; }
+
+/*Transpo stops*/
+.spot-philcoa { background-position:-260px 0px; }
+.spot-philcoa.active { background-position:-260px -0px; }
+.spot-smn { background-position:-260px 0px; }
+.spot-smn.active { background-position:-260px -0px; }
+.spot-centris { background-position:-260px 0px; }
+.spot-centris.active { background-position:-260px -0px; }
+.spot-mrt { background-position:-390px 0px; }
+.spot-mrt.active { background-position:-390px -0px; }
+.spot-lrt { background-position:-390px 0px; }
+.spot-lrt.active { background-position:-390px -0px; }
+.spot-lrt2 { background-position:-390px 0px; }
+.spot-lrt2.active { background-position:-390px -0px; }
+.spot-fairview { background-position:-520px 0px; }
+.spot-fairview.active { background-position:-520px -0px; }
+.spot-marikina { background-position:-650px 0px; }
+.spot-marikina.active { background-position:-650px -0px; }
+.spot-katips { background-position:-260px 0px; }
+.spot-katips.active { background-position:-260px 0px; }
+
+/*Waiting sheds*/
+.spot-as-shed { background-position:-130px 0px; }
+.spot-as-shed.active { background-position:-130px -120px; }
+.spot-vinzons-shed { background-position:-130px 0px; }
+.spot-vinzons-shed.active { background-position:-130px -120px; }
+.spot-econ-shed { background-position:-130px 0px; }
+.spot-econ-shed.active { background-position:-130px -120px; }
+.spot-romulo-shed { background-position:-130px 0px; }
+.spot-romulo-shed.active { background-position:-130px -120px; }
+.spot-engg-shed { background-position:-130px 0px; }
+.spot-engg-shed.active { background-position:-130px -120px; }
+.spot-gym-shed { background-position:-130px 0px; }
+.spot-gym-shed.active { background-position:-130px -120px; }
+.spot-arki-shed { background-position:-130px 0px; }
+.spot-arki-shed.active { background-position:-130px -120px; }
+.spot-nigs-shed { background-position:-130px 0px; }
+.spot-nigs-shed.active { background-position:-130px -120px; }
+.spot-gym-shed { background-position:-130px 0px; }
+.spot-gym-shed.active { background-position:-130px -120px; }
+.spot-jacinto-shed { background-position:-130px 0px; }
+.spot-jacinto-shed.active { background-position:-130px -120px; }
+.spot-coop-shed { background-position:-130px 0px; }
+.spot-coop-shed.active { background-position:-130px -120px; }
+.spot-phan-shed { background-position:-130px 0px; }
+.spot-phan-shed.active { background-position:-130px -120px; }
+.spot-music-shed { background-position:-130px 0px; }
+.spot-music-shed.active { background-position:-130px -120px; }
+
+
+.spot-oble { background-position:-780px 0px; }
+.spot-oble.active { background-position:-780px -120px; }
+.spot-theatre { background-position:-780px 0px; }
+.spot-theatre.active { background-position:-780px -120px; }
+.spot-checkpoint { background-position:-780px 0px; }
+.spot-checkpoint.active { background-position:-780px -120px; }
+.spot-cal { background-position:-780px 0px; }
+.spot-cal.active { background-position:-780px -120px; }
+.spot-fc-stop { background-position:-780px 0px; }
+.spot-fc-stop.active { background-position:-780px -120px; }
+.spot-music { background-position:-780px 0px; }
+.spot-music.active { background-position:-780px -120px; }
+.spot-cmc { background-position:-780px 0px; }
+.spot-cmc.active { background-position:-780px -120px; }
+.spot-as { background-position:-780px 0px; }
+.spot-as.active { background-position:-780px -120px; }
+.spot-cba { background-position:-780px 0px; }
+.spot-cba.active { background-position:-780px -120px; }
+.spot-se { background-position:-780px 0px; }
+.spot-se.active { background-position:-780px -120px; }
+.spot-solair { background-position:-780px 0px; }
+.spot-solair.active { background-position:-780px -120px; }
+.spot-ncpag { background-position:-780px 0px; }
+.spot-ncpag.active { background-position:-780px -120px; }
+.spot-law { background-position:-780px 0px; }
+.spot-law.active { background-position:-780px -120px; }
+.spot-law-center { background-position:-780px 0px; }
+.spot-law-center.active { background-position:-780px -120px; }
+.spot-physics { background-position:-780px 0px; }
+.spot-physics.active { background-position:-780px -120px; }
+.spot-math { background-position:-780px 0px; }
+.spot-math.active { background-position:-780px -120px; }
+.spot-chem { background-position:-780px 0px; }
+.spot-chem.active { background-position:-780px -120px; }
+.spot-che { background-position:-780px 0px; }
+.spot-che.active { background-position:-780px -120px; }
+.spot-bio { background-position:-780px 0px; }
+.spot-bio.active { background-position:-780px -120px; }
+.spot-nigs { background-position:-780px 0px; }
+.spot-nigs.active { background-position:-780px -120px; }
+.spot-arki { background-position:-780px 0px; }
+.spot-arki.active { background-position:-780px -120px; }
+.spot-engg { background-position:-780px 0px; }
+.spot-engg.active { background-position:-780px -120px; }
+
+.spot-scihi { background-position:-780px 0px; }
+.spot-scihi.active { background-position:-780px -120px; }
+
+.spot-citygym { background-position:-780px 0px; }
+.spot-citygym.active { background-position:-780px -120px; }
+
+.spot-mcdo { background-position:-780px 0px; }
+.spot-mcdo.active { background-position:-780px -120px; }
+
+.spot-convention { background-position:-780px 0px; }
+.spot-convention.active { background-position:-780px -120px; }
+
+.spot-che-bridge { background-position:-780px 0px; }
+.spot-che-bridge.active { background-position:-780px -120px; }
+.spot-ilangilang { background-position:-780px 0px; }
+.spot-ilangilang.active { background-position:-780px -120px; }
+.spot-sunken { background-position:-780px 0px; }
+.spot-sunken.active { background-position:-780px -120px; }
+.spot-chapel { background-position:-780px 0px; }
+.spot-chapel.active { background-position:-780px -120px; }
+.spot-infirmary { background-position:-780px 0px; }
+.spot-infirmary.active { background-position:-780px -120px; }
+.spot-sc { background-position:-780px 0px; }
+.spot-sc.active { background-position:-780px -120px; }
+.spot-kalay { background-position:-780px 0px; }
+.spot-kalay.active { background-position:-780px -120px; }
+.spot-romulo { background-position:-780px 0px; }
+.spot-romulo.active { background-position:-780px -120px; }
+.spot-gym { background-position:-780px 0px; }
+.spot-gym.active { background-position:-780px -120px; }
+.spot-gt-toyota { background-position:-780px 0px; }
+.spot-gt-toyota.active { background-position:-780px -120px; }
+.spot-issi { background-position:-780px 0px; }
+.spot-issi.active { background-position:-780px -120px; }
+.spot-surp { background-position:-780px 0px; }
+.spot-surp.active { background-position:-780px -120px; }
+.spot-area2 { background-position:-780px 0px; }
+.spot-area2.active { background-position:-780px -120px; }
+.spot-post-office { background-position:-780px 0px; }
+.spot-post-office.active { background-position:-780px -120px; }
+.spot-upis { background-position:-780px 0px; }
+.spot-upis.active { background-position:-780px -120px; }
+.spot-cs-lib { background-position:-780px 0px; }
+.spot-cs-lib.active { background-position:-780px -120px; }
+.spot-iesm { background-position:-780px 0px; }
+.spot-iesm.active { background-position:-780px -120px; }
+.spot-fa { background-position:-780px 0px; }
+.spot-fa.active { background-position:-780px -120px; }
+.spot-yakal { background-position:-780px 0px; }
+.spot-yakal.active { background-position:-780px -120px; }
+.spot-velasquez-gate { background-position:-780px 0px; }
+.spot-velasquez-gate.active { background-position:-780px -120px; }
+.spot-archery { background-position:-780px 0px; }
+.spot-archery.active { background-position:-780px -120px; }
+.spot-betaway { background-position:-780px 0px; }
+.spot-betaway.active { background-position:-780px -120px; }
+.spot-tennis-court { background-position:-780px 0px; }
+.spot-tennis-court.active { background-position:-780px -120px; }
+.spot-dmst-complex { background-position:-780px 0px; }
+.spot-dmst-complex.active { background-position:-780px -120px; }
+.spot-fi { background-position:-780px 0px; }
+.spot-fi.active { background-position:-780px -120px; }
+.spot-fc { background-position:-780px 0px; }
+.spot-fc.active { background-position:-780px -120px; }
+.spot-phan { background-position:-780px 0px; }
+.spot-phan.active { background-position:-780px -120px; }
+.spot-educ { background-position:-780px 0px; }
+.spot-educ.active { background-position:-780px -120px; }
+.spot-magsaysay-gate { background-position:-780px 0px; }
+.spot-magsaysay-gate.active { background-position:-780px -120px; }
+.spot-main-lib { background-position:-780px 0px; }
+.spot-main-lib.active { background-position:-780px -120px; }
+.spot-cswcd { background-position:-780px 0px; }
+.spot-cswcd.active { background-position:-780px -120px; }
+.spot-casaa { background-position:-780px 0px; }
+.spot-casaa.active { background-position:-780px -120px; }
+.spot-sci-complex { background-position:-780px 0px; }
+.spot-sci-complex.active { background-position:-780px -120px; }
+.spot-pagasa { background-position:-780px 0px; }
+.spot-pagasa.active { background-position:-780px -120px; }
+.spot-mbb { background-position:-780px 0px; }
+.spot-mbb.active { background-position:-780px -120px; }
+.spot-molave { background-position:-780px 0px; }
+.spot-molave.active { background-position:-780px -120px; }
+.spot-alumni-center { background-position:-780px 0px; }
+.spot-alumni-center.active { background-position:-780px -120px; }
+.spot-vargas { background-position:-780px 0px; }
+.spot-vargas.active { background-position:-780px -120px; }
+.spot-carillon { background-position:-780px 0px; }
+.spot-carillon.active { background-position:-780px -120px; }
+.spot-dance-studio { background-position:-780px 0px; }
+.spot-dance-studio.active { background-position:-780px -120px; }
+.spot-oldmbb { background-position:-780px 0px; }
+.spot-oldmbb.active { background-position:-780px -120px; }
+.spot-nsri { background-position:-780px 0px; }
+.spot-nsri.active { background-position:-780px -120px; }
+.spot-nec { background-position:-780px 0px; }
+.spot-nec.active { background-position:-780px -120px; }
+.spot-stat { background-position:-780px 0px; }
+.spot-stat.active { background-position:-780px -120px; }
+.spot-vanguard { background-position:-780px 0px; }
+.spot-vanguard.active { background-position:-780px -120px; }
+.spot-vinzons { background-position:-780px 0px; }
+.spot-vinzons.active { background-position:-780px -120px; }
+.spot-uave-jacinto { background-position:-780px 0px; }
+.spot-uave-jacinto.active { background-position:-780px -120px; }
+.spot-tba { background-position:-780px 0px; }
+.spot-tba.active { background-position:-780px -120px; }
+.spot-upcc { background-position:-780px 0px; }
+.spot-upcc.active { background-position:-780px -120px; }
+.spot-jacinto-gate { background-position:-780px 0px; }
+.spot-jacinto-gate.active { background-position:-780px -120px; }
+.spot-nismed { background-position:-780px 0px; }
+.spot-nismed.active { background-position:-780px -120px; }
+.spot-our { background-position:-780px 0px; }
+.spot-our.active { background-position:-780px -120px; }
+
+/* Distinguish the "cover page" visually other sections. */
+body.section-0 #map { opacity:0.5; }
+
+@media (max-width:640px) {
+  body {
+    font-size:12px;
+    line-height:16px;
+    }
+  article {
+    width:100%;
+    min-width:100%;
+    padding-top:0px;
+    padding-bottom:200%;
+    }
+  section {
+    text-shadow:none;
+    margin-left:0px;
+    padding:30px;
+    }
+  section.active {
+    position:fixed;
+    top:0px; left:0px; right:0px;
+    }
+  #pane { width:100%; }
+  #map  {
+    bottom:0%;
+    left:0%;
+    width:100%;
+    height:150%;
+    }
+  }
+
+@media (min-width:1280px) {
+  body {
+    font-size:18px;
+    line-height:24px;
+    }
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}

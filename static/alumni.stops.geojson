@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "crshs",
+        "marker-symbol": "school"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.48018038272856,
+          9.788197513149086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "citygym",
+        "marker-symbol": "school"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.49359947443007,
+          9.791247710322661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mcdo",
+        "marker-symbol": "restaurant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.49259901046752,
+          9.788678568636985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "convention",
+        "marker-symbol": "building"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.4895144701004,
+          9.781446803864823
+        ]
+      }
+    }
+  ]
+}

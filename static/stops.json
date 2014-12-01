@@ -1,0 +1,170 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      
+      "properties": {
+        "id": "as-shed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0704356431961,
+          14.653752085439068
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "vinzons"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.07311785221098,
+          14.654193228676494
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "econ-shed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.07316076755522,
+          14.655786526854643
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "romulo-shed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.07282817363738,
+          14.657229308041824
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "engg-shed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0684722661972,
+          14.656289944391313
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "oble"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.06419146060944,
+          14.654670700356128
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "theatre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0659670829773,
+          14.656175767319473
+        ]
+      }
+    },
+    {
+      
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.06201887130737,
+          14.654670700356128
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "gym-shed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.06163263320921,
+          14.659844973446111
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "arki-shed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.06505513191222,
+          14.653622337259035
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "nigs-shed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.06903284788132,
+          14.64872039474235
+        ]
+      }
+    },
+    {
+      
+      "properties": {
+        "id": "katips"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.07417464256288,
+          14.63223359760071
+        ]
+      }
+    },
+    {
+      
+      "properties": { "id":"centris" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.03824377059937,
+          14.643756060661177
+        ]
+      }
+    }
+  ]
+}
